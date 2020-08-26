@@ -30,7 +30,7 @@ data:
        - targets: ['localhost:9090']
      - job_name: 'node'
        static_configs:
-       - targets: ['192.168.43.165:9100']
+       - targets: ['kube-state-metrics.kube-system.svc.cluster.192.168.43.60:8080']
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
